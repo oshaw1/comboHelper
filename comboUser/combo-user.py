@@ -44,10 +44,11 @@ def main():
 
                 if not paused:
                     pyautogui.write(username)
-                    pyautogui.press('tab')
+                    pyautogui.press("tab")
+                    pyautogui.press('enter')
+                    time.sleep(4)
                     pyautogui.write(password)
-                    for _ in range(6):
-                        pyautogui.press('tab')
+                    pyautogui.press('tab')
                     pyautogui.press('enter')
                     last_username = username
                     last_password = password
